@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.3. Estructura | Unidad de Trabajo 1: Arquitecturas y lenguajes de programación en clientes web </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Isaac Rodríguez García" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-11"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Unidad de Trabajo 1: Arquitecturas y lenguajes de programación en clientes web</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Unidad 1: Arquitecturas y lenguajes de programación en clientes web</a></li>
+   <li class="current-page-parent"><a href="1_desarrollo_web.html" class="current-page-parent daddy">1. Desarrollo web</a>
+   <ul>
+      <li><a href="11_reas.html" class="no-ch">1.1. Áreas</a></li>
+      <li><a href="12_etapas.html" class="no-ch">1.2. Etapas</a></li>
+      <li id="active"><a href="13_estructura.html" class="active no-ch">1.3. Estructura</a></li>
+   </ul>
+   </li>
+   <li><a href="2_lenguajes_de_programacin_en_clientes_web.html" class="daddy">2. Lenguajes de programación en clientes web</a>
+   <ul class="other-section">
+      <li><a href="21_caractersticas.html" class="no-ch">2.1. Características</a></li>
+      <li><a href="22_compatibilidades.html" class="no-ch">2.2. Compatibilidades</a></li>
+      <li><a href="23_seguridad.html" class="no-ch">2.3. Seguridad</a></li>
+   </ul>
+   </li>
+   <li><a href="3_herramientas_y_utilidades_de_programacin.html" class="no-ch">3. Herramientas y utilidades de programación</a></li>
+   <li><a href="4_integracin_de_cdigo_javascript_con_html.html" class="no-ch">4. Integración de código JavaScript con HTML</a></li>
+   <li><a href="mapa_conceptual.html" class="no-ch">Mapa conceptual</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="12_etapas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="2_lenguajes_de_programacin_en_clientes_web.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">1.3. Estructura</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_gramatica" id="id4">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_gramatica.svg)"><h1 class="iDeviceTitle">Estructura del diseño Web</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta4_137_2" class="block iDevice_content">
+<div class="exe-text"><p>Hoy en día los sitios web siguen un modelo basado en la <strong>programación cliente-servidor</strong> con <strong>tres elementos</strong> comunes:</p>
+<dl class="exe-dl">
+<dt>El lado del servidor (server-side o back-end)</dt>
+<dd>
+<p>Las acciones realizadas por el usuario son analizadas, recuperadas y devueltas a través de los programas almacenados y ejecutados en el servidor que los aloja.</p>
+<p>El trabajo de estos i<span style="font-size: 1.05em;">ncluye el hardware y software del servidor Web, así como diferentes elementos de programación y tecnologías incrustadas. Las tecnologías pueden abarcar un rango amplio desde programas <a href="#tb17061ba-9a7a-c862-ab94-d0ce644f4c04" id="linkb17061ba-9a7a-c862-ab94-d0ce644f4c04" class="exe-tooltip definition-tt dark-tt rounded-tt">CGI</a> escritos en <a href="#ta7438cb1-3310-c98c-5124-95ec7a3bd1d2" id="linka7438cb1-3310-c98c-5124-95ec7a3bd1d2" class="exe-tooltip definition-tt dark-tt rounded-tt">PERL</a> hasta aplicaciones <a href="#t80b8cb2d-4e57-9f50-fadb-c862ee9686b9" id="link80b8cb2d-4e57-9f50-fadb-c862ee9686b9" class="exe-tooltip definition-tt titled-tt" title="Multihilo | ">multihilo</a> basadas en Java, incluyendo tecnologías de servidor de bases de datos que soporten múltiples sitios web.</span><span style="font-size: 1.05em;"></span></p>
+</dd>
+<dt>El lado del cliente (client-side o front-end)</dt>
+<dd>
+<p>Se trata de todo aquello que el usuario puede ver, interactuar y experimentar. Su objetivo es programar las partes del sitio web que son visibles para el usuario y que se ejecutan en el navegador.</p>
+<p>E<span style="font-size: 1.05em;">ste elemento hace referencia a los navegadores web y está soportado por tecnologías como HTML, CSS y lenguajes como JavaScript y controles ActiveX, los cuales se utilizan para crear la presentación de la página o proporcionar características interactivas. Es justamente aquí dónde nos vamos a centrar a lo largo de todo el módulo.</span><span style="font-size: 1.05em;"></span></p>
+</dd>
+<dt>La red</dt>
+<dd>
+<p>Describe los diferentes elementos de <a href="#td0da4997-642f-ae7b-71df-fba739dbaf1c" id="linkd0da4997-642f-ae7b-71df-fba739dbaf1c" class="exe-tooltip definition-tt titled-tt" title="Conectividad | ">conectividad</a> utilizados para mostrar el sitio web al usuario. </p>
+<p><span style="font-size: 1.05em;">El entendimiento completo de todos los aspectos técnicos del medio Web, incluyendo la componente de red, es de vital importancia para llegar a ser un buen Diseñador Web.</span></p>
+</dd>
+</dl>
+<div id="tb17061ba-9a7a-c862-ab94-d0ce644f4c04" class="exe-tooltip-text">
+<p>Interfaz Común de Entrada (Common Gateway Interface)</p>
+</div>
+<div id="ta7438cb1-3310-c98c-5124-95ec7a3bd1d2" class="exe-tooltip-text">
+<p>Lenguaje Práctico para la Extracción de Informes (Practical Extraction and Report Language)</p>
+</div>
+<div id="t80b8cb2d-4e57-9f50-fadb-c862ee9686b9" class="exe-tooltip-text">
+<p>También denominado multiproceso hace referencia a la posibilidad de ejecutar diferentes trozos de código de una misma aplicación de forma simultánea.</p>
+</div>
+<div id="td0da4997-642f-ae7b-71df-fba739dbaf1c" class="exe-tooltip-text">
+<p>Capacidad que tiene un dispositivo para poder conectarse a otros. Aquí se detallan los diferentes protocolos y material utilizado para poder realizar dicha conexión.</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Reconocimiento No comercial Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="12_etapas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="2_lenguajes_de_programacin_en_clientes_web.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

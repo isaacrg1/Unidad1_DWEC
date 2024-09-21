@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.1. Características | Unidad de Trabajo 1: Arquitecturas y lenguajes de programación en clientes web </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Isaac Rodríguez García" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-4"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Unidad de Trabajo 1: Arquitecturas y lenguajes de programación en clientes web</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Unidad 1: Arquitecturas y lenguajes de programación en clientes web</a></li>
+   <li><a href="1_desarrollo_web.html" class="daddy">1. Desarrollo web</a>
+   <ul class="other-section">
+      <li><a href="11_reas.html" class="no-ch">1.1. Áreas</a></li>
+      <li><a href="12_etapas.html" class="no-ch">1.2. Etapas</a></li>
+      <li><a href="13_estructura.html" class="no-ch">1.3. Estructura</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="2_lenguajes_de_programacin_en_clientes_web.html" class="current-page-parent daddy">2. Lenguajes de programación en clientes web</a>
+   <ul>
+      <li id="active"><a href="21_caractersticas.html" class="active no-ch">2.1. Características</a></li>
+      <li><a href="22_compatibilidades.html" class="no-ch">2.2. Compatibilidades</a></li>
+      <li><a href="23_seguridad.html" class="no-ch">2.3. Seguridad</a></li>
+   </ul>
+   </li>
+   <li><a href="3_herramientas_y_utilidades_de_programacin.html" class="no-ch">3. Herramientas y utilidades de programación</a></li>
+   <li><a href="4_integracin_de_cdigo_javascript_con_html.html" class="no-ch">4. Integración de código JavaScript con HTML</a></li>
+   <li><a href="mapa_conceptual.html" class="no-ch">Mapa conceptual</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="2_lenguajes_de_programacin_en_clientes_web.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="22_compatibilidades.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.1. Características</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_exp_competenciadigital" id="id8">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_competenciadigital.svg)"><h1 class="iDeviceTitle">Razones para el uso de lenguajes de script</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta8_141_2" class="block iDevice_content">
+<div class="exe-text"><p>Como vimos anteriormente, los lenguajes de programación para clientes web no son un reemplazo de la programación en el lado del servidor. Cualquier web que reaccione dinámicamente a interacciones del usuario o que almacene datos, estará gestionada por lenguajes de script en el lado del servidor, incluso aunque usemos JavaScript en el cliente para mejorar la experiencia de usuario. Las razones son simples:</p>
+<ol>
+<li>JavaScript por sí mismo <strong>no puede escribir ficheros en el servidor</strong>. Puede ayudar al usuario a elegir opciones o preparar datos para su envío, pero después de eso solamente podrá ceder los datos al lenguaje de servidor encargado de procesarlos.</li>
+<li><strong>No todos los clientes web ejecutan JavaScript</strong>. Algunos lectores, dispositivos móviles, buscadores, o navegadores instalados en ciertos contextos están entre aquellos que no pueden realizar llamadas a JavaScript, o que simplemente son incompatibles con su código. Aunque esto ocurra nuestra página web debería ser completamente funcional con JavaScript desactivado. Utilizaremos JavaScript para conseguir que la experiencia de navegación web sea lo más rápida, moderna o divertida posible, pero no dejaremos que nuestra web deje de funcionar si JavaScript no está funcionando.</li>
+<li>Uno de los caminos que más ha integrado la programación cliente con la programación servidor ha surgido gracias a <a href="#t9ed39d4d-74a7-cf3c-b537-8d6a5ee63139" id="link9ed39d4d-74a7-cf3c-b537-8d6a5ee63139" class="exe-tooltip definition-tt dark-tt rounded-tt">AJAX</a>. El <strong>proceso "asíncrono"</strong> de AJAX se ejecuta en el navegador del cliente y emplea JavaScript. Este proceso se encarga de solicitar datos <a href="#ta9d066b7-747c-b114-16e3-f3ca4fa9e406" id="linka9d066b7-747c-b114-16e3-f3ca4fa9e406" class="exe-tooltip definition-tt dark-tt rounded-tt">XML</a>, o enviar datos al lenguaje de servidor y todo ello de forma transparente en background. Los datos devueltos por el servidor pueden ser examinados por JavaScript en el lado del cliente, para actualizar secciones o partes de la página web. Es así como funciona una de las webs más populares en Internet: el servicio de <a href="http://maps.google.com">Google Maps</a>.</li>
+</ol>
+<p style="text-align: center;"><img src="DWEC01_CONT_R03_ajax-loader.gif" alt="" width="32" height="32" /></p>
+<div id="t9ed39d4d-74a7-cf3c-b537-8d6a5ee63139" class="exe-tooltip-text">
+<p>JavaScript Asíncrono y XML (Asynchronous JavaScript And XML)</p>
+</div>
+<div id="ta9d066b7-747c-b114-16e3-f3ca4fa9e406" class="exe-tooltip-text">
+<p>Lenguaje de Marcas Extensible (Extensible Markup Lenguage)</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_adjunto" id="id9">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_adjunto.svg)"><h1 class="iDeviceTitle">Utilidades de JavaScript</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta9_142_2" class="block iDevice_content">
+<div class="exe-text"><p>JavaScript está orientado a dar soluciones a:</p>
+<ul style="list-style-type: square;">
+<li>Conseguir que nuestra página web responda o reaccione directamente a la <strong>interacción</strong> del usuario con elementos de formulario y enlaces hipertexto.</li>
+<li>La distribución de pequeños <strong>grupos de datos</strong> y proporcionar una interfaz amigable para estos.</li>
+<li>Controlar <strong>múltiples ventanas</strong> o marcos de navegación, plug-ins, o applets Java basados en las elecciones que ha hecho el usuario en el documento HTML.</li>
+<li><strong>Pre-procesar</strong> datos en el cliente antes de enviarlos al servidor.</li>
+<li><strong>Modificar estilos y contenido</strong> en los navegadores de forma <strong>dinámica</strong> e instantáneamente, en respuesta a interacciones del usuario.</li>
+<li>Solicitar ficheros del servidor, y enviar <strong>solicitudes</strong> de lectura y escritura a los lenguajes de servidor.</li>
+</ul>
+<p>Los lenguajes de script como JavaScript no se usan solamente en las páginas web. Los <a href="#t67b668ec-881e-9201-c000-eb42e03c853e" id="link67b668ec-881e-9201-c000-eb42e03c853e" class="exe-tooltip definition-tt titled-tt" title="Intérprete | ">intérpretes</a> de JavaScript están integrados en múltiples aplicaciones de uso cotidiano. Estas aplicaciones proporcionan su propio modelo de acceso y gestión de los módulos que componen la aplicación y para ello comparten el lenguaje JavaScript en cada aplicación. Podríamos citar varios ejemplos como: Adobe Acrobat, Dreamweaver, OpenOffice.org, Google Docs, Plasmoid (Widgets del Escritorio Linux KDE), entre otros.</p>
+<div id="t67b668ec-881e-9201-c000-eb42e03c853e" class="exe-tooltip-text">
+<p>Programa informático capaz de analizar y ejecutar código escrito en un lenguaje de programación de alto nivel (aquel que se acerca más a la capacidad cognitiva de las personas en lugar de a la capacidad ejecutora de la máquina).</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper MultichoiceIdevice em_iDevice em_iDevice_question" id="id11">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Autoevaluación</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section class="question">
+<form name="multi-choice-form-11_87" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion11_87" class="block question iDevice_content">
+<p>¿Podríamos escribir con JavaScript un fichero de texto directamente en el lado del servidor?</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i11_90" class="sr-av"><a href="#answer-11_90">Opción 1</a></label><input type="radio" name="option11_87" id="i11_90" class="exe-radio-option exe-radio-option-0-3-11_87-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-11_90"><div id="taans11_90" class="block iDevice_content">
+<p>Sí, pero solo si se trata de una cookie.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i11_93" class="sr-av"><a href="#answer-11_93">Opción 2</a></label><input type="radio" name="option11_87" id="i11_93" class="exe-radio-option exe-radio-option-1-3-11_87-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-11_93"><div id="taans11_93" class="block iDevice_content">
+<p>No, de ninguna manera.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i11_256" class="sr-av"><a href="#answer-11_256">Opción 3</a></label><input type="radio" name="option11_87" id="i11_256" class="exe-radio-option exe-radio-option-2-3-11_87-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-11_256"><div id="taans11_256" class="block iDevice_content">
+<p>Sí, empleando AJAX.</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b11_87" class="feedback js-hidden">
+<div id="taf11_90" class=" iDevice_content">
+<p><span style="color: #ff0000;">No es correcta</span>, ya que aunque JavaScript puede escribir cookies lo hará en el lado del cliente, no del servidor.</p>
+</div>
+</section>
+<section id="sa1b11_87" class="feedback js-hidden">
+<div id="taf11_93" class=" iDevice_content">
+<p>Efectivamente <span style="color: #339966;">es correcta</span> ya que JavaScript es un lenguaje que interpreta el navegador web y no es un lenguaje de servidor, por lo que no tendrá acceso a los recursos para poder escribir en él.</p>
+</div>
+</section>
+<section id="sa2b11_87" class="feedback js-hidden">
+<div id="taf11_256" class=" iDevice_content">
+<p><span style="color: #ff0000;">No es cierto</span>, AJAX nos permite hacer peticiones en background al servidor pero no escribir nada directamente en él, puesto que AJAX está basado en JavaScript y es una tecnología en el lado del cliente (a excepción de node.js que se ejecuta en el  lado del servidor).</p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-11_90">Incorrecto</a><span> (<a href="#sa0b11_87">Retroalimentación</a>)</span></li>
+<li><a href="#answer-11_93">Opción correcta</a><span> (<a href="#sa1b11_87">Retroalimentación</a>)</span></li>
+<li><a href="#answer-11_256">Incorrecto</a><span> (<a href="#sa2b11_87">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Reconocimiento No comercial Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="2_lenguajes_de_programacin_en_clientes_web.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="22_compatibilidades.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

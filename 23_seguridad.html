@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.3. Seguridad | Unidad de Trabajo 1: Arquitecturas y lenguajes de programación en clientes web </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Isaac Rodríguez García" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-6"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Unidad de Trabajo 1: Arquitecturas y lenguajes de programación en clientes web</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Unidad 1: Arquitecturas y lenguajes de programación en clientes web</a></li>
+   <li><a href="1_desarrollo_web.html" class="daddy">1. Desarrollo web</a>
+   <ul class="other-section">
+      <li><a href="11_reas.html" class="no-ch">1.1. Áreas</a></li>
+      <li><a href="12_etapas.html" class="no-ch">1.2. Etapas</a></li>
+      <li><a href="13_estructura.html" class="no-ch">1.3. Estructura</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="2_lenguajes_de_programacin_en_clientes_web.html" class="current-page-parent daddy">2. Lenguajes de programación en clientes web</a>
+   <ul>
+      <li><a href="21_caractersticas.html" class="no-ch">2.1. Características</a></li>
+      <li><a href="22_compatibilidades.html" class="no-ch">2.2. Compatibilidades</a></li>
+      <li id="active"><a href="23_seguridad.html" class="active no-ch">2.3. Seguridad</a></li>
+   </ul>
+   </li>
+   <li><a href="3_herramientas_y_utilidades_de_programacin.html" class="no-ch">3. Herramientas y utilidades de programación</a></li>
+   <li><a href="4_integracin_de_cdigo_javascript_con_html.html" class="no-ch">4. Integración de código JavaScript con HTML</a></li>
+   <li><a href="mapa_conceptual.html" class="no-ch">Mapa conceptual</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="22_compatibilidades.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="3_herramientas_y_utilidades_de_programacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.3. Seguridad</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_destacado" id="id28">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_destacado.svg)"><h1 class="iDeviceTitle">Restricciones</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta28_161_2" class="block iDevice_content">
+<div class="exe-text"><p>JavaScript proporciona un gran potencial para diseñadores maliciosos que quieran distribuir sus scripts a través de la web. Para evitar esto los navegadores web en el cliente aplican dos tipos de restricciones:</p>
+<ul style="list-style-type: disc;">
+<li>Por razones de seguridad cuando se ejecuta código de JavaScript, este lo hace en un <strong>"espacio seguro de ejecución"</strong> en el cual solamente podrá realizar tareas relacionadas con la web, nada de tareas genéricas de programación como creación de ficheros.</li>
+<li>Además los scripts están restringidos por la <strong>política de "mismo origen"</strong>: los scripts de una web no tendrán acceso a información tal como usuarios, contraseñas, o cookies enviadas desde otra web. La mayor parte de los agujeros de seguridad son infracciones tanto de la política de "mismo origen" como de la política de "espacio seguro de ejecución".</li>
+</ul>
+<p style="text-align: center;"><img src="DWEC01_CONT_R06_Surveillance-camera.png" alt="" width="164" height="160" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_nota" id="id29">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_nota.svg)"><h1 class="iDeviceTitle">Limitaciones</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta29_162_2" class="block iDevice_content">
+<div class="exe-text"><p>Al mismo tiempo es importante entender las <strong>limitaciones que tiene JavaScript </strong>y que, en parte, refuerzan sus capacidades de seguridad. JavaScript no podrá realizar ninguna de las siguientes tareas:</p>
+<ul style="list-style-type: square;">
+<li>Modificar o acceder a las preferencias del navegador del cliente, las características de apariencia de la ventana principal de navegación, las capacidades de impresión, o a los botones de acciones del navegador.</li>
+<li>Lanzar la ejecución de una aplicación en el ordenador del cliente.</li>
+<li>Leer o escribir ficheros o directorios en el ordenador del cliente (con la excepción de las cookies).</li>
+<li>Escribir directamente ficheros en el servidor.</li>
+<li>Capturar los datos procedentes de una transmisión en streaming de un servidor, para su retransmisión.</li>
+<li>Enviar e-mails a nosotros mismos de forma invisible sobre los visitantes a nuestra página web (aunque si que podría enviar datos a una aplicación en el lado del servidor capaz de enviar correos).</li>
+<li>Interactuar directamente con los lenguajes de servidor.</li>
+<li>Las páginas web almacenadas en diferentes dominios no pueden ser accesibles por JavaScript.</li>
+<li>JavaScript es incapaz de proteger el origen de las imágenes de nuestra página.</li>
+<li>Implementar <a href="#t47c28a93-0c0e-f90b-86ce-60c9cb3e00d4" id="link47c28a93-0c0e-f90b-86ce-60c9cb3e00d4" class="exe-tooltip definition-tt titled-tt" title="Multiprocesamiento | ">multiprocesamiento</a> o multitarea.</li>
+</ul>
+<p>Otro tipo de <strong>vulnerabilidades </strong>que podemos encontrar están relacionadas con el <a href="#t800c3562-1754-cde8-7f42-52023d7444e8" id="link800c3562-1754-cde8-7f42-52023d7444e8" class="exe-tooltip definition-tt dark-tt rounded-tt">XSS</a>. Este tipo de vulnerabilidad viola la política de "mismo origen" y ocurre cuando un atacante es capaz de inyectar código malicioso en la página web presentada a su víctima. Este código malicioso puede provenir de la base de datos a la cual está accediendo esa víctima. Generalmente este tipo de errores se deben a fallos de implementación de los programadores de navegadores web.<br />Otro aspecto muy relacionado con la seguridad son los defectos o imperfecciones de los navegadores web o plugins utilizados. Estas imperfecciones pueden ser empleadas por los atacantes para escribir scripts maliciosos que se puedan ejecutar en el sistema operativo del usuario.</p>
+<div id="t47c28a93-0c0e-f90b-86ce-60c9cb3e00d4" class="exe-tooltip-text">
+<p>Ejecución simultánea de varios trozos de código de una misma aplicación o proceso.</p>
+</div>
+<div id="t800c3562-1754-cde8-7f42-52023d7444e8" class="exe-tooltip-text">
+<p>Secuencias de Comando en Sitios Cruzados (Cross-Site Scripting)</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_reflexion" id="id30">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_reflexion.svg)"><h1 class="iDeviceTitle">El motor de ejecución</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta30_163_2" class="block iDevice_content">
+<div class="exe-text"><p>El <strong>motor de ejecución de JavaScript </strong>es el encargado de ejecutar el código de JavaScript en el navegador y por lo tanto es en él donde recaerá el peso fuerte de la implementación de la seguridad. Podríamos citar varios ejemplos de motores de JavaScript:</p>
+<ol style="list-style-type: lower-alpha;">
+<li><strong>Active Script de Microsoft:</strong> tecnología que soporta JScript como lenguaje de scripting. A menudo se considera compatible con JavaScript, pero Microsoft emplea múltiples características que no siguen los estándares <a href="#t5bac93ef-0716-76cc-3428-7c6117e650da" id="link5bac93ef-0716-76cc-3428-7c6117e650da" class="exe-tooltip definition-tt titled-tt" title="European Computer Manufacturers Association | ">ECMA</a>.</li>
+<li>El kit de herramientas <a href="#tde170c30-328b-9a4e-b0f8-c0604979dd35" id="linkde170c30-328b-9a4e-b0f8-c0604979dd35" class="exe-tooltip definition-tt dark-tt rounded-tt">Qt</a> C++ también incluye un módulo intérprete de JavaScript.</li>
+<li>El lenguaje de programación Java en su versión <a href="#tbc0c286e-b185-13e7-40db-898cb1788eff" id="linkbc0c286e-b185-13e7-40db-898cb1788eff" class="exe-tooltip definition-tt dark-tt rounded-tt">JDK</a> 1.6 introdujo un paquete denominada javax.script que permite la ejecución de JavaScript.</li>
+<li>Todos los motores implementados por los navegadores web como Mozilla, Google, Opera, Safari, etc. Cada uno de ellos da soporte a alguna de las diferentes versiones de JavaScript.</li>
+<li>Plasmoid permite programar en JavaScript los elementos gráficos conocidos como Widgets en KDE para Linux. Gnome Shell en Linux también permite programar con JavaScript.</li>
+<li>Algunos motores de programación de videojuegos utilizan JavaScript para programar la parte de la lógica del videojuego. Por ejemplo Unreal Engine y Unity 3D.</li>
+</ol>
+<p>Hoy en día una de las características que más se resalta y que permite diferenciar a unos navegadores de otros, es la rapidez con la que sus motores de JavaScript pueden ejecutar las aplicaciones, y la seguridad y aislamiento que ofrecen en la ejecución de las aplicaciones en diferentes ventanas o pestañas de navegación.</p>
+<div id="t5bac93ef-0716-76cc-3428-7c6117e650da" class="exe-tooltip-text">
+<p>Definen el estándar ECMASCRIPT. Dependiendo del motor javascript del navegador lo implementa con una mayor o menor exactitud.</p>
+</div>
+<div id="tde170c30-328b-9a4e-b0f8-c0604979dd35" class="exe-tooltip-text">
+<p>Biblioteca desarrollada por Trolltech (Quasar Technologies)</p>
+</div>
+<div id="tbc0c286e-b185-13e7-40db-898cb1788eff" class="exe-tooltip-text">
+<p>Kit de Desarrollo de Java (Java Development Kit)</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Reconocimiento No comercial Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="22_compatibilidades.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="3_herramientas_y_utilidades_de_programacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

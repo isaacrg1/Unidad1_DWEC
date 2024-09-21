@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>4. Integración de código JavaScript con HTML | Unidad de Trabajo 1: Arquitecturas y lenguajes de programación en clientes web </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Isaac Rodríguez García" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-8"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Unidad de Trabajo 1: Arquitecturas y lenguajes de programación en clientes web</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Unidad 1: Arquitecturas y lenguajes de programación en clientes web</a></li>
+   <li><a href="1_desarrollo_web.html" class="daddy">1. Desarrollo web</a>
+   <ul class="other-section">
+      <li><a href="11_reas.html" class="no-ch">1.1. Áreas</a></li>
+      <li><a href="12_etapas.html" class="no-ch">1.2. Etapas</a></li>
+      <li><a href="13_estructura.html" class="no-ch">1.3. Estructura</a></li>
+   </ul>
+   </li>
+   <li><a href="2_lenguajes_de_programacin_en_clientes_web.html" class="daddy">2. Lenguajes de programación en clientes web</a>
+   <ul class="other-section">
+      <li><a href="21_caractersticas.html" class="no-ch">2.1. Características</a></li>
+      <li><a href="22_compatibilidades.html" class="no-ch">2.2. Compatibilidades</a></li>
+      <li><a href="23_seguridad.html" class="no-ch">2.3. Seguridad</a></li>
+   </ul>
+   </li>
+   <li><a href="3_herramientas_y_utilidades_de_programacin.html" class="no-ch">3. Herramientas y utilidades de programación</a></li>
+   <li id="active"><a href="4_integracin_de_cdigo_javascript_con_html.html" class="active no-ch">4. Integración de código JavaScript con HTML</a></li>
+   <li><a href="mapa_conceptual.html" class="no-ch">Mapa conceptual</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="3_herramientas_y_utilidades_de_programacin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="mapa_conceptual.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">4. Integración de código JavaScript con HTML</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id38">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">La etiqueta script</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta38_171_2" class="block iDevice_content">
+<div class="exe-text"><p>Ahora que ya conoces las herramientas que puedes utilizar para comenzar a programar en JavaScript, vamos a ver la forma de integrar el código de JavaScript en tu código HTML.</p>
+<p>Los navegadores web te permiten varias opciones de inserción de código de JavaScript. Podremos insertar código usando las etiquetas &lt;script&gt; &lt;/script&gt; y empleando un atributo type indicaremos qué tipo de lenguaje de script estamos utilizando:</p>
+<p>Por ejemplo:</p>
+<p><code>&lt;script type="text/javascript"&gt;</code><br /><code>// El código de JavaScript vendrá aquí</code><br /><code>&lt;/script&gt;</code></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id40">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Fichero externo</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta40_173_2" class="block iDevice_content">
+<div class="exe-text"><p>Otra forma de <strong>integrar el código de JavaScript</strong> es incrustar un <strong>fichero externo</strong> que contenga el código de JavaScript. Esta sería la forma más recomendable, ya que así se consigue una separación entre el código y la estructura de la página web y como ventajas adicionales podrás compartir código entre diferentes páginas, centralizar el código para la depuración de errores, tendrás mayor claridad en tus desarrollos, más modularidad, seguridad del código y conseguirás que las páginas carguen más rápido. La rapidez de carga de las páginas se consigue al tener el código de JavaScript en un fichero independiente, ya que si más de una página tiene que acceder a ese fichero lo cogerá automáticamente de la caché del navegador con lo que se acelerará la carga de la página.</p>
+<p>Para ello tendremos que añadir a la etiqueta script el atributo src, con el nombre del fichero que contiene el código de JavaScript. Generalmente los ficheros que contienen texto de JavaScript tendrán la extensión .js.</p>
+<p>Por ejemplo:</p>
+<p><code>&lt;script type="text/javascript" src="tucodigo.js"&gt;&lt;/script&gt;</code></p>
+<p>Si necesitas cargar más de un fichero .js repite la misma instrucción cambiando el nombre del fichero. Las etiquetas de &lt;script&gt; y &lt;/script&gt; son obligatorias a la hora de incluir el fichero .js. <strong>Atención:</strong> no se debe escribir ningún código de JavaScript entre esas etiquetas cuando se usa el atributo src.</p>
+<p>Para <strong>referenciar el fichero origen .js</strong> de JavaScript dependerá de la localización física de ese fichero. Por ejemplo en la línea anterior el fichero tucodigo.js deberá estar en el mismo directorio que el fichero .html. Podrás enlazar fácilmente a otros ficheros de JavaScript localizados en directorios diferentes de tu servidor o de tu dominio. Si quieres hacer una referencia absoluta al fichero, la ruta tendrá que comenzar por http://, en otro caso tendrás que poner la ruta relativa dónde se encuentra tu fichero .js.</p>
+<p>Ejemplos:</p>
+<p><code>&lt;script type="text/javascript" src="http://www.tudominio.com/ejemplo.js"&gt;&lt;/script&gt;</code><br /><code>&lt;script type="text/javascript" src="../js/ejemplo.js"&gt;&lt;/script&gt;</code></p>
+<p>El fichero ejemplo.js se debe encontrar en el directorio anterior (../) al actual, dentro de la carpeta js/.</p>
+<p>Cuando alguien examine el código fuente de tu página web verá el enlace a tu fichero .js, en lugar de ver el código de JavaScript directamente. Esto no quiere decir que tu código no sea inaccesible, ya que simplemente copiando la ruta de tu fichero .js y tecleándola en el navegador podremos descargar el fichero .js y ver todo el código de JavaScript. En otras palabras, nada de lo que tu navegador descargue para mostrar la página web podrá estar oculto de la vista de cualquier programador.</p>
+<p>A veces te puedes encontrar que tu script se va a ejecutar en un navegador que no soporta JavaScript. Para ello dispones de una etiqueta &lt;noscript&gt;Texto informativo&lt;/noscript&gt; que te permitirá indicar un texto adicional que se mostrará indicando que ese navegador no soporta JavaScript.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id41">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Integrar código en XHTML</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta41_174_2" class="block iDevice_content">
+<div class="exe-text"><p>Si estamos trabajando con <a href="#ta456c238-7f38-1675-a02c-a0d5801acb95" id="linka456c238-7f38-1675-a02c-a0d5801acb95" class="exe-tooltip definition-tt dark-tt rounded-tt"><strong>XHTML</strong></a>, la sintaxis para insertar un código de JavaScript directamente en el XHTML es un poco diferente:</p>
+<p><code>&lt;script type="text/javascript"&gt;</code><br /><code>&lt;!--//--&gt;&lt;![CDATA[//&gt;&lt;!--</code><br /><code>// código de JavaScript a continuación</code><br /><code>//--&gt;&lt;!]]&gt;</code><br /><code>&lt;/script&gt;</code></p>
+<p>Los analizadores de XHTML son intolerantes a los elementos que no comienzan por &lt; y a las entidades HTML que no comienzan por &amp;, y estos caracteres como verás más adelante son ampliamente utilizados en JavaScript. La solución es encapsular las instrucciones de JavaScript en lo que se conoce como sección CDATA:</p>
+<p><code>&lt;![CDATA[</code><br /><code>XHTML permite cualquier tipo de carácter aquí incluyendo &lt; y el símbolo &amp;</code><br /><code>]]&gt;</code></p>
+<p>Como puedes observar el código es un poco complejo en este caso, razón de más para integrar el código de JavaScript en un fichero externo.</p>
+<div id="ta456c238-7f38-1675-a02c-a0d5801acb95" class="exe-tooltip-text">
+<p>Lenguaje Extensible de Marcas de Hipertexto (eXtensible Hypertext Markup Language)</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id42">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Proteger el código JavaScript</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta42_175_2" class="block iDevice_content">
+<div class="exe-text"><p>Seguramente estarás pensando en cómo puedes <strong>proteger el código de JavaScript</strong> que vas a programar, del uso fraudulento por otros programadores o visitantes a tu página: la respuesta rápida a esa pregunta es que es imposible hacerlo.</p>
+<p>Para que el código de JavaScript pueda ejecutarse correctamente deberá ser cargado por el navegador web y por lo tanto su código fuente deberá estar visible al navegador. Si realmente te preocupa que otras personas usen o roben tus scripts, deberías incluir un mensaje de copyright en tu código fuente. Piensa que no solamente tus scripts son visibles al mundo, sino que los scripts del resto de programadores también lo son. De esta forma puedes ver fácilmente cuando alguien está utilizando al pie de la letra tus scripts, aunque ésto no evita que alguien copie tu código y elimine tu mensaje de copyright.</p>
+<p>Lo más que se puede hacer es ofuscar el código, o hacerlo más difícil de entender. Las técnicas de ofuscación incluyen la eliminación de saltos de línea, espacios en blanco innecesarios, tabuladores, utilización de nombres ininteligibles en las funciones y variables, utilización de variables para almacenar trozos de código, uso de recursividad, etc. La forma más rápida de hacer todas esas tareas de ofuscación es utilizar un software que producirá una copia "comprimida" del script que has programado para facilitar su carga rápida.</p>
+<p>Para que veas un ejemplo de ofuscador de JavaScript visita:</p>
+<p style="text-align: center;"><a href="https://www.javascriptobfuscator.com/">Herramienta para ofuscar JavaScript</a></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_eng_saber" id="id43">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_saber.svg)"><h1 class="iDeviceTitle">Para saber más</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta43_176_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: center;"><a href="http://www.w3schools.com/js/js_whereto.asp">Integración de JavaScript con HTML 5</a></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Reconocimiento No comercial Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="3_herramientas_y_utilidades_de_programacin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="mapa_conceptual.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
